@@ -1,0 +1,161 @@
+/* Google Fonts */
+body, .quicksand-font {
+  font-family: 'Quicksand', 'Segoe UI', Arial, sans-serif;
+}
+.script-font {
+  font-family: 'Dancing Script', cursive;
+}
+
+/* Modern Parisian Patisserie Theme */
+:root {
+  --patisserie-blush: #f7d6e0;
+  --patisserie-navy: #2d3142;
+  --patisserie-gold: #ffe6a7;
+  --patisserie-cream: #fffaf3;
+  --patisserie-rose: #e29578;
+  --patisserie-white: #fff;
+}
+
+body {
+  background: linear-gradient(120deg, var(--patisserie-cream) 0%, var(--patisserie-blush) 100%);
+  font-family: 'Quicksand', 'Segoe UI', Arial, sans-serif;
+  color: var(--patisserie-navy);
+}
+
+h1, h2, h3, h4, h5, h6, .script-font {
+  color: var(--patisserie-navy);
+  font-family: 'Dancing Script', cursive;
+}
+
+.text-pink {
+  color: var(--patisserie-rose) !important;
+}
+
+.btn-pink {
+  background: linear-gradient(90deg, var(--patisserie-rose) 0%, var(--patisserie-gold) 100%);
+  color: var(--patisserie-navy);
+  border: none;
+  border-radius: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 12px rgba(226, 149, 120, 0.12);
+  transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+.btn-pink:hover, .btn-pink:focus {
+  background: linear-gradient(90deg, var(--patisserie-navy) 0%, var(--patisserie-rose) 100%);
+  color: var(--patisserie-gold);
+  transform: scale(1.06);
+}
+
+.navbar, .footer-enhanced {
+  background: var(--patisserie-gold) !important;
+  color: var(--patisserie-navy);
+  border-bottom: 1px solid #f3e6d0;
+}
+.navbar-brand, .footer-enhanced a {
+  color: var(--patisserie-rose) !important;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.7rem;
+}
+.navbar-brand:hover, .footer-enhanced a:hover {
+  color: var(--patisserie-navy) !important;
+}
+
+.hero {
+  background: linear-gradient(120deg, var(--patisserie-blush) 0%, var(--patisserie-gold) 100%);
+  color: var(--patisserie-navy);
+  min-height: 400px;
+  border-radius: 0 0 2rem 2rem;
+  box-shadow: 0 4px 24px rgba(226, 149, 120, 0.10);
+  position: relative;
+  overflow: hidden;
+}
+.hero-bg-pattern {
+  pointer-events: none;
+}
+
+.gallery-section, .testimonials-section, .newsletter-section {
+  background: var(--patisserie-white);
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 16px rgba(45, 49, 66, 0.06);
+}
+
+.gallery-img {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 3px solid var(--patisserie-gold);
+  border-radius: 1rem;
+}
+.gallery-img:hover {
+  transform: scale(1.09) rotateZ(-2deg);
+  box-shadow: 0 8px 32px rgba(45, 49, 66, 0.10);
+}
+
+.pastry-card {
+  border: none;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: var(--patisserie-white);
+  box-shadow: 0 2px 16px rgba(226, 149, 120, 0.08);
+}
+.pastry-card:hover {
+  transform: translateY(-8px) scale(1.04) rotateZ(-1deg);
+  box-shadow: 0 12px 36px rgba(45, 49, 66, 0.12);
+}
+
+.card-title {
+  color: var(--patisserie-navy);
+  font-weight: 700;
+}
+
+.testimonial-card {
+  background: var(--patisserie-cream);
+  border-left: 6px solid var(--patisserie-rose);
+  border-radius: 1rem;
+  transition: box-shadow 0.3s;
+}
+.testimonial-card:hover {
+  box-shadow: 0 8px 32px rgba(226, 149, 120, 0.13);
+}
+
+input, textarea, .form-control {
+  border-radius: 1.5rem !important;
+  border: 1.5px solid var(--patisserie-blush) !important;
+  background: var(--patisserie-cream) !important;
+  color: var(--patisserie-navy) !important;
+  font-size: 1.1em;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+input:focus, textarea:focus, .form-control:focus {
+  border-color: var(--patisserie-rose) !important;
+  box-shadow: 0 0 0 2px var(--patisserie-gold) !important;
+}
+
+.footer-enhanced {
+  background: var(--patisserie-gold) !important;
+  color: var(--patisserie-navy);
+  border-top: 1px solid #f3e6d0;
+  font-size: 1.1em;
+}
+.footer-enhanced a {
+  color: var(--patisserie-rose);
+  transition: color 0.2s;
+}
+.footer-enhanced a:hover {
+  color: var(--patisserie-navy);
+}
+
+/* Responsive tweaks */
+@media (max-width: 767px) {
+  .hero {
+    min-height: 250px;
+    border-radius: 0 0 1rem 1rem;
+  }
+  .gallery-section, .testimonials-section, .newsletter-section {
+    border-radius: 1rem;
+  }
+  .pastry-card {
+    border-radius: 1rem;
+  }
+}

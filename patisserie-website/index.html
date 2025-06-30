@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esperance</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-pink script-font d-flex align-items-center" href="index.html">
+          <img src="images/image 7.jpg" alt="Esperance logo" class="logo me-2" height="40">
+          Esperance
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="order.html">Order Online</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="loyalty.html">Loyalty</a></li>
+            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center justify-content-center text-center py-5 position-relative">
+      <div class="container position-relative z-2">
+        <h1 class="display-3 fw-bold mb-3 script-font">Welcome to Esperance</h1>
+        <p class="lead mb-4">Experience the finest French pastries, crafted with love and elegance.</p>
+        <a href="menu.html" class="btn btn-pink btn-lg shadow">Explore Our Menu</a>
+      </div>
+      <img src="https://www.transparenttextures.com/patterns/cream-dust.png" class="hero-bg-pattern position-absolute top-0 start-0 w-100 h-100" alt="" style="opacity:0.15;z-index:1;object-fit:cover;">
+    </section>
+    <!-- Featured Pastries -->
+    <section class="featured-pastries py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4 script-font">Featured Pastries</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card pastry-card h-100 shadow-sm">
+              <img src="images/croissant.jpg" class="card-img-top" alt="Croissant">
+              <div class="card-body">
+                <h5 class="card-title">Croissant</h5>
+                <p class="card-text">Flaky, buttery, and golden brown—our signature croissant is a Parisian delight.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card pastry-card h-100 shadow-sm">
+              <img src="images/choclate eclair.jpg" class="card-img-top" alt="Éclair">
+              <div class="card-body">
+                <h5 class="card-title">Chocolate Éclair</h5>
+                <p class="card-text">Filled with rich chocolate cream and topped with glossy ganache.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card pastry-card h-100 shadow-sm">
+              <img src="images/maacarons.jpg" class="card-img-top" alt="Macaron">
+              <div class="card-body">
+                <h5 class="card-title">Macaron</h5>
+                <p class="card-text">Colorful, delicate, and bursting with flavor—our macarons are a customer favorite.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-4 script-font">What Our Customers Say</h2>
+        <div class="row justify-content-center g-4">
+          <div class="col-md-4">
+            <div class="testimonial-card p-4 rounded shadow-sm h-100">
+              <p class="mb-3">“The best pastries I've ever tasted! The croissants are heavenly.”</p>
+              <div class="d-flex align-items-center">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle me-3" width="48" height="48" alt="Customer 1">
+                <div>
+                  <strong>Emily S.</strong><br><span class="text-muted small">Local Guide</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-card p-4 rounded shadow-sm h-100">
+              <p class="mb-3">“A beautiful shop with a wonderful atmosphere. The macarons are a must-try!”</p>
+              <div class="d-flex align-items-center">
+                <img src="https://randomuser.me/api/portraits/men/36.jpg" class="rounded-circle me-3" width="48" height="48" alt="Customer 2">
+                <div>
+                  <strong>Oliver B.</strong><br><span class="text-muted small">Food Blogger</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Newsletter Signup -->
+    <section class="newsletter-section py-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <div class="p-4 rounded shadow-sm bg-white">
+              <h2 class="mb-3 script-font text-center">Join Our Newsletter</h2>
+              <form id="newsletter-form" class="d-flex flex-column flex-sm-row gap-2">
+                <input type="email" class="form-control" id="newsletter-email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-pink">Subscribe</button>
+              </form>
+              <div id="newsletter-success" class="alert alert-success mt-3 d-none" role="alert">
+                Thank you for subscribing!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer-enhanced bg-light text-center py-4 mt-5">
+    <div class="container">
+      <div class="mb-2">
+        <a href="#" class="me-3 text-pink"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="me-3 text-pink"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-pink"><i class="bi bi-twitter"></i></a>
+      </div>
+      <div class="mb-2">
+        <span class="me-2"><i class="bi bi-geo-alt"></i> 123 Paris Avenue, City</span>
+        <span><i class="bi bi-envelope"></i> info@esperance.com</span>
+      </div>
+      <small>&copy; 2025 Esperance. All rights reserved.</small>
+    </div>
+  </footer>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Newsletter form handler
+    document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('newsletter-success').classList.remove('d-none');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
