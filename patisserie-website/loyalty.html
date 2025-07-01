@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loyalty | Esperance</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-pink script-font d-flex align-items-center" href="index.html">
+          <img src="images/image 7.jpg" alt="Esperance logo" class="logo me-2" height="60">
+          Esperance
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="order.html">Order Online</a></li>
+            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link active" href="loyalty.html">Loyalty</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="py-5">
+    <section class="menu-banner text-center py-5 mb-4 position-relative">
+      <div class="container position-relative z-2">
+        <h1 class="display-4 fw-bold script-font mb-2">Loyalty Program</h1>
+        <p class="lead">Join our rewards program and enjoy exclusive benefits at Esperance!</p>
+      </div>
+      <img src="https://www.transparenttextures.com/patterns/cream-dust.png" class="hero-bg-pattern position-absolute top-0 start-0 w-100 h-100" alt="" style="opacity:0.12;z-index:1;object-fit:cover;">
+    </section>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="p-4 rounded shadow-sm bg-white">
+            <h2 class="mb-3 script-font">How It Works</h2>
+            <ul class="list-group mb-4">
+              <li class="list-group-item">Earn <strong>1 point</strong> for every $1 spent.</li>
+              <li class="list-group-item">Get a <strong>free pastry</strong> for every 50 points.</li>
+              <li class="list-group-item">Exclusive offers and birthday treats for members.</li>
+              <li class="list-group-item">Early access to new products and events.</li>
+            </ul>
+            <h2 class="mb-3 script-font">Join Now</h2>
+            <form id="loyalty-form">
+              <div class="mb-3">
+                <label for="loyalty-name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="loyalty-name" required>
+              </div>
+              <div class="mb-3">
+                <label for="loyalty-email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="loyalty-email" required>
+              </div>
+              <button type="submit" class="btn btn-pink">Join Loyalty Program</button>
+              <div id="loyalty-success" class="alert alert-success mt-3 d-none" role="alert">
+                Thank you for joining! We look forward to rewarding your loyalty.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer-enhanced bg-light text-center py-4 mt-5">
+    <div class="container">
+      <div class="mb-2">
+        <a href="#" class="me-3 text-pink"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="me-3 text-pink"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-pink"><i class="bi bi-twitter"></i></a>
+      </div>
+      <div class="mb-2">
+        <span class="me-2"><i class="bi bi-geo-alt"></i> 123 Parisian Lane, City</span>
+        <span><i class="bi bi-envelope"></i> info@esperance.com</span>
+      </div>
+      <small>&copy; 2025 Esperance. All rights reserved.</small>
+    </div>
+  </footer>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('loyalty-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('loyalty-success').classList.remove('d-none');
+      this.reset();
+    });
+  </script>
+</body>
+</html> 
