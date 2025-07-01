@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews | Esperance</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-pink script-font d-flex align-items-center" href="index.html">
+          <img src="images/image 7.jpg" alt="Esperance logo" class="logo me-2" height="60">
+          Esperance
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="order.html">Order Online</a></li>
+            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link active" href="reviews.html">Reviews</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="py-5">
+    <section class="menu-banner text-center py-5 mb-4 position-relative">
+      <div class="container position-relative z-2">
+        <h1 class="display-4 fw-bold script-font mb-2">Customer Reviews</h1>
+        <p class="lead">See what our customers are saying and share your own experience!</p>
+      </div>
+      <img src="https://www.transparenttextures.com/patterns/cream-dust.png" class="hero-bg-pattern position-absolute top-0 start-0 w-100 h-100" alt="" style="opacity:0.12;z-index:1;object-fit:cover;">
+    </section>
+    <div class="container mb-5">
+      <div class="row g-4 mb-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="testimonial-card p-4 rounded shadow-sm h-100 bg-white">
+            <p class="mb-3">“The best pastries I've ever tasted! The croissants are heavenly.”</p>
+            <div class="d-flex align-items-center">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle me-3" width="48" height="48" alt="Customer 1">
+              <div>
+                <strong>Amélie D.</strong><br><span class="text-muted small">Local Guide</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="testimonial-card p-4 rounded shadow-sm h-100 bg-white">
+            <p class="mb-3">“A beautiful shop with a wonderful atmosphere. The macarons are a must-try!”</p>
+            <div class="d-flex align-items-center">
+              <img src="https://randomuser.me/api/portraits/men/36.jpg" class="rounded-circle me-3" width="48" height="48" alt="Customer 2">
+              <div>
+                <strong>Jean P.</strong><br><span class="text-muted small">Food Blogger</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <form id="review-form" class="p-4 rounded shadow-sm bg-white">
+            <h5 class="mb-3 script-font">Leave a Review</h5>
+            <div class="mb-3">
+              <label for="reviewer" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="reviewer" required>
+            </div>
+            <div class="mb-3">
+              <label for="review-text" class="form-label">Review</label>
+              <textarea class="form-control" id="review-text" rows="3" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="rating" class="form-label">Rating</label>
+              <select class="form-select" id="rating" required>
+                <option value="">Choose...</option>
+                <option>5 - Excellent</option>
+                <option>4 - Very Good</option>
+                <option>3 - Good</option>
+                <option>2 - Fair</option>
+                <option>1 - Poor</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-pink">Submit Review</button>
+            <div id="review-success" class="alert alert-success mt-3 d-none" role="alert">
+              Thank you for your review!
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer-enhanced bg-light text-center py-4 mt-5">
+    <div class="container">
+      <div class="mb-2">
+        <a href="#" class="me-3 text-pink"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="me-3 text-pink"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-pink"><i class="bi bi-twitter"></i></a>
+      </div>
+      <div class="mb-2">
+        <span class="me-2"><i class="bi bi-geo-alt"></i> 123 Parisian Lane, City</span>
+        <span><i class="bi bi-envelope"></i> info@esperance.com</span>
+      </div>
+      <small>&copy; 2025 Esperance. All rights reserved.</small>
+    </div>
+  </footer>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('review-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('review-success').classList.remove('d-none');
+      this.reset();
+    });
+  </script>
+</body>
+</html> 
